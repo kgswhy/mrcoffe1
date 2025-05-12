@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - MR.COFFEE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>MR.COFFEE</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="order.html">Order</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="espresso">Espresso</button>
+            <button class="filter-btn" data-filter="frappe">Frappe</button>
+            <button class="filter-btn" data-filter="brewed">Brewed</button>
+            <button class="filter-btn" data-filter="bread">Bread</button>
+        </div>
+        <div class="menu-grid">
+            <!-- Menu items will be loaded dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MR.COFFEE</h3>
+                <p>Experience the future of coffee</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@mrcoffee.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MR.COFFEE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html> 
