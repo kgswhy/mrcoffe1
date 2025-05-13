@@ -28,33 +28,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Most Popular Products Data
 const popularProducts = [
     {
-        name: "Signature Espresso",
+        name: "Espresso",
         price: "$4.99",
-        image: "images/products/espresso.jpg",
-        description: "Our signature blend of premium beans"
+        image: "images/products/pexels-ilknurerduran-31968905.jpg",
+        description: "Our signature blend"
     },
     {
         name: "Caramel Frappe",
         price: "$5.99",
-        image: "images/products/frappe.jpg",
+        image: "images/products/pexels-freestocks-214333.jpg",
         description: "Creamy caramel delight"
     },
     {
         name: "Cold Brew",
         price: "$4.49",
-        image: "images/products/coldbrew.jpg",
+        image: "images/products/pexels-marta-dzedyshko-1042863-2775860.jpg",
         description: "Smooth and refreshing"
     },
     {
         name: "Cappuccino",
         price: "$4.29",
-        image: "images/products/cappuccino.jpg",
+        image: "images/products/pexels-chevanon-312418.jpg",
         description: "Classic Italian style"
     },
     {
         name: "Mocha Latte",
         price: "$5.49",
-        image: "images/products/mocha.jpg",
+        image: "images/products/pexels-ohaakash-30147974.jpg",
         description: "Rich chocolate and coffee"
     }
 ];
