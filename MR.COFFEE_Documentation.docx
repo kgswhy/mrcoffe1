@@ -40,6 +40,7 @@ mrcoffe/
 ├── rewards.html  - Rewards program page
 └── about.html    - Company information page
 
+
 4. Features
 -----------
 4.1 Home Page (index.html)
@@ -79,6 +80,7 @@ mrcoffe/
 • Responsive image handling
 • Modern form elements
 • Accessibility compliance
+
 
 5.2 CSS3 Implementation
 • Flexbox layout system
@@ -126,6 +128,7 @@ The website implements a mobile-first approach with:
 • Appropriate media queries
 • Touch-friendly interface
 • Optimized performance
+
 
 8. Setup Instructions
 --------------------

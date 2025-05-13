@@ -1,17 +1,17 @@
-// Product prices
+// Product prices in IDR
 const productPrices = {
-    espresso: 4.99,
-    frappe: 5.99,
-    coldbrew: 4.49,
-    cappuccino: 4.29,
-    mocha: 5.49
+    espresso: 75000,
+    frappe: 89000,
+    coldbrew: 65000,
+    cappuccino: 65000,
+    mocha: 82000
 };
 
-// Add-on prices
+// Add-on prices in IDR
 const addonPrices = {
-    'extra-shot': 1.00,
-    'whipped-cream': 0.50,
-    'caramel-syrup': 0.50
+    'extra-shot': 15000,
+    'whipped-cream': 8000,
+    'caramel-syrup': 8000
 };
 
 // Form validation functions
@@ -62,6 +62,16 @@ function validateQuantity(quantity) {
     return "";
 }
 
+// Format currency to IDR
+function formatToRupiah(number) {
+    return new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+    }).format(number);
+}
+
 // Calculate total price
 function calculateTotal() {
     const product = document.getElementById('product').value;
@@ -78,7 +88,7 @@ function calculateTotal() {
         total += addonPrices[addon.value] * quantity;
     });
     
-    document.getElementById('totalPrice').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('totalPrice').textContent = formatToRupiah(total);
 }
 
 // Form validation and submission

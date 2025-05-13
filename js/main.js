@@ -29,31 +29,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const popularProducts = [
     {
         name: "Espresso",
-        price: "$4.99",
+        price: "Rp 75.000",
         image: "images/products/pexels-ilknurerduran-31968905.jpg",
         description: "Our signature blend"
     },
     {
         name: "Caramel Frappe",
-        price: "$5.99",
+        price: "Rp 89.000",
         image: "images/products/pexels-freestocks-214333.jpg",
         description: "Creamy caramel delight"
     },
     {
         name: "Cold Brew",
-        price: "$4.49",
+        price: "Rp 65.000",
         image: "images/products/pexels-marta-dzedyshko-1042863-2775860.jpg",
         description: "Smooth and refreshing"
     },
     {
         name: "Cappuccino",
-        price: "$4.29",
+        price: "Rp 65.000",
         image: "images/products/pexels-chevanon-312418.jpg",
         description: "Classic Italian style"
     },
     {
         name: "Mocha Latte",
-        price: "$5.49",
+        price: "Rp 82.000",
         image: "images/products/pexels-ohaakash-30147974.jpg",
         description: "Rich chocolate and coffee"
     }

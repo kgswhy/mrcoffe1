@@ -2,63 +2,63 @@
 const menuItems = [
     {
         name: "Signature Espresso",
-        price: "$4.99",
+        price: "Rp 75.000",
         image: "images/products/pexels-ilknurerduran-31968905.jpg",
         description: "Our signature blend of premium beans",
         category: "espresso"
     },
     {
         name: "Caramel Frappe",
-        price: "$5.99",
+        price: "Rp 89.000",
         image: "images/products/pexels-freestocks-214333.jpg",
         description: "Creamy caramel delight",
         category: "frappe"
     },
     {
         name: "Cold Brew",
-        price: "$4.49",
+        price: "Rp 65.000",
         image: "images/products/pexels-marta-dzedyshko-1042863-2775860.jpg",
         description: "Smooth and refreshing",
         category: "brewed"
     },
     {
         name: "Cappuccino",
-        price: "$4.29",
+        price: "Rp 65.000",
         image: "images/products/pexels-chevanon-312418.jpg",
         description: "Classic Italian style",
         category: "brewed"
     },
     {
         name: "Mocha Latte",
-        price: "$5.49",
+        price: "Rp 82.000",
         image: "images/products/pexels-ohaakash-30147974.jpg",
         description: "Rich chocolate and coffee",
         category: "brewed"
     },
     {
         name: "Vanilla Frappe",
-        price: "$5.99",
+        price: "Rp 89.000",
         image: "images/products/pexels-luis-espinoza-1873776-11512983.jpg",
         description: "Sweet vanilla treat",
         category: "frappe"
     },
     {
         name: "Pour Over",
-        price: "$4.99",
+        price: "Rp 75.000",
         image: "images/products/pexels-andrew-4264049.jpg",
         description: "Handcrafted perfection",
         category: "brewed"
     },
     {
         name: "Croissant",
-        price: "$3.99",
+        price: "Rp 35.000",
         image: "images/products/pexels-elkady-3892469.jpg",
         description: "Buttery and flaky",
         category: "bread"
     },
     {
         name: "Chocolate Muffin",
-        price: "$3.49",
+        price: "Rp 30.000",
         image: "images/products/pexels-brigitte-tohm-36757-131899.jpg",
         description: "Rich chocolate goodness",
         category: "bread"

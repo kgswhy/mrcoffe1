@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #3C2A21;
-    --secondary-color: #6F4E37;
+    --primary-color: #6F4E37;
+    --secondary-color: #8B593B;
     --accent-color: #B85C38;
-    --text-color: #E5C9A7;
-    --background-color: #1C0A00;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
     --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    --gradient-dark: linear-gradient(135deg, #1C0A00, #2C1810);
-    --gradient-accent: linear-gradient(135deg, #B85C38, #6F4E37);
+    --gradient-dark: linear-gradient(135deg, #FFFFFF, #F5F5F5);
+    --gradient-accent: linear-gradient(135deg, #B85C38, #8B593B);
     --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
@@ -19,10 +19,10 @@
 }
 
 body {
-    background: var(--gradient-dark);
+    background: var(--background-color);
     position: relative;
     overflow-x: hidden;
-    color: #FFFFFF;
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -34,14 +34,14 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(circle at 10% 20%, rgba(184, 92, 56, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(111, 78, 55, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 10% 20%, rgba(184, 92, 56, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(111, 78, 55, 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 /* Navbar Styles */
@@ -51,11 +51,13 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     padding: 1rem;
-    background: var(--gradient-dark);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo h1 {
@@ -74,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--gradient-dark);
+    background: rgba(255, 255, 255, 0.98);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -86,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-links a {
-    color: #FFFFFF;
+    color: var(--text-color);
     text-decoration: none;
     margin: 0 1.5rem;
     font-weight: 500;
@@ -116,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner {
     position: relative;
     height: 100vh;
-    background: linear-gradient(135deg, rgba(28, 10, 0, 0.9), rgba(60, 42, 33, 0.8)),
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.8)),
                 url('../images/pexels-juanpphotoandvideo-894695.jpg') center/cover;
     background-attachment: fixed;
     display: flex;
@@ -134,8 +136,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background: 
-        linear-gradient(45deg, var(--primary-color) 0%, transparent 100%),
-        linear-gradient(-45deg, var(--secondary-color) 0%, transparent 100%);
+        linear-gradient(45deg, rgba(111, 78, 55, 0.1) 0%, transparent 100%),
+        linear-gradient(-45deg, rgba(139, 89, 59, 0.1) 0%, transparent 100%);
     opacity: 0.5;
 }
 
@@ -207,6 +209,7 @@ section {
     position: relative;
     overflow: hidden;
     padding: 6rem 5%;
+    background: var(--background-color);
 }
 
 section::before {
@@ -216,7 +219,7 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(28, 10, 0, 0.3);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: -1;
 }
@@ -359,9 +362,9 @@ section h2::after {
 /* Footer */
 footer {
     background: var(--gradient-dark);
-    position: relative;
-    overflow: hidden;
+    color: var(--text-color);
     padding: 4rem 5% 2rem;
+    position: relative;
 }
 
 footer::before {
@@ -371,9 +374,8 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        radial-gradient(circle at 0% 100%, rgba(184, 92, 56, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 100% 0%, rgba(111, 78, 55, 0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(111, 78, 55, 0.05), rgba(139, 89, 59, 0.05));
+    z-index: -1;
 }
 
 .footer-content {
@@ -393,16 +395,12 @@ footer::before {
 
 .footer-section a {
     color: var(--text-color);
-    display: block;
-    margin-bottom: 0.8rem;
+    text-decoration: none;
     transition: var(--transition);
-    opacity: 0.8;
 }
 
 .footer-section a:hover {
     color: var(--accent-color);
-    opacity: 1;
-    transform: translateX(5px);
 }
 
 .footer-bottom {
