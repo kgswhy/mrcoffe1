@@ -2,6 +2,20 @@
 
 A modern, responsive website for MR.COFFEE, a futuristic coffee shop that combines innovation with tradition.
 
+## Project Structure
+
+```
+mrcoffe/
+├── css/           # Stylesheets
+├── js/            # JavaScript files
+├── images/        # Image assets
+├── index.html     # Home page
+├── menu.html      # Menu page
+├── order.html     # Order form
+├── rewards.html   # Rewards program
+└── about.html     # About us page
+```
+
 ## Features
 
 - Responsive design that works on desktop, tablet, and mobile devices
@@ -13,29 +27,29 @@ A modern, responsive website for MR.COFFEE, a futuristic coffee shop that combin
 
 ## Pages
 
-1. **Home Page**
+1. **Home Page** (`index.html`)
    - Banner section with company slogan
    - Most ordered products section
    - Rewards preview
    - CEO & founder section
 
-2. **Menu Page**
+2. **Menu Page** (`menu.html`)
    - Filterable menu items
    - Product categories
    - Order buttons
 
-3. **Order Page**
+3. **Order Page** (`order.html`)
    - Form with validation
    - Product selection
    - Add-ons
    - Price calculation
 
-4. **Rewards Page**
+4. **Rewards Page** (`rewards.html`)
    - App download section
    - Current rewards display
    - Modal for app download
 
-5. **About Us Page**
+5. **About Us Page** (`about.html`)
    - CEO & founder section
    - Mission and vision
    - Company timeline
@@ -43,6 +57,9 @@ A modern, responsive website for MR.COFFEE, a futuristic coffee shop that combin
 ## Technologies Used
 
 - HTML5
+  - Semantic markup
+  - Responsive images
+  - Form elements
 - CSS3
   - Flexbox
   - Grid
@@ -55,7 +72,7 @@ A modern, responsive website for MR.COFFEE, a futuristic coffee shop that combin
   - Event Handling
   - Modal Functionality
 
-## CSS Properties Used
+## CSS Features
 
 1. Flexbox for layout
 2. Grid for responsive layouts
@@ -88,11 +105,17 @@ The website is fully responsive and adapts to different screen sizes:
 - Tablet (768px - 1024px)
 - Mobile (< 768px)
 
-## Setup
+## Getting Started
 
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Navigate through the website
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mrcoffe.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd mrcoffe
+   ```
+3. Open `index.html` in your browser to view the website
 
 ## Browser Support
 
@@ -105,7 +128,9 @@ The website is fully responsive and adapts to different screen sizes:
 
 - Fonts: Google Fonts (Poppins)
 - Icons: Custom designed
-- Images: Placeholder images (replace with actual images)
+- Images: 
+  - Website images sourced from [Pexels](https://www.pexels.com/)
+  - App store and Play store buttons from [Figma Community](https://www.figma.com/community/file/1359492696316450448/app-store-google-play-download-buttons)
 
 ## License
 
